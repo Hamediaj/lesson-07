@@ -35,5 +35,89 @@ nav {
 
 main {
   display:grid;
-  grid-template-columns: 35% 65%
+  grid-template-columns: 45% 55%;
+  grid-template-rows: 33% 33% 33%;
+  font-family: arial;
+  font-size: 17px;
+}
+
+.left-content {
+  display: grid;
+  grid-column-start:auto;
+  grid-row-end:auto;
+  margin: 1rem;
+}
+
+.right-content {
+  display: grid;
+  grid-column-start: 2;
+  margin: 1rem
+}
+
+section {
+ display: flex;
+ flex-direction:column;
+ align-items: center;
+ margin: 1rem;
+ padding: 2rem;
+}
+
+
+article {
+ display: flex;
+ flex-direction:column;
+ justify-content: center;
+ align-items: center;
+ margin: 1rem;
+ padding: 2rem;
+ background-color: #F5F5F5;
+}
+
+
+h2 {
+  display: flex;
+  justify-content:center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #1b447f;
+}
+
+nav a {
+  color: white;
+  font-family: arial;
+}
+
+article p {
+  color: #ecb722;
+  font-weight:bolder;
+  margin: 1rem
+}
+
+blockquote {
+  color: #1b447f;
+  font-style:italic;
+}
+
+section p {
+  padding-top: .5rem;
+  color: #444444;
+}
+
+footer {
+  background-image: url("../images/footerImage.jpg");
+  background-size: 100%;
+  overflow:hidden;
+  display: grid;
+  grid-gap: 1rem;
+  padding: 1rem;
+}
+
+.footerlist {
+  list-style: none;
+  display:inline-block;
+  padding-right: 1.5rem
+}
+
+.footerimg {
+  width: 120px
 }
